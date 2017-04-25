@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>SunPy 0.7</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<!-- CSS -->
+<link rel="stylesheet" href="../css/owl.carousel.css" />
+<link rel="stylesheet" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/font-awesome.min.css" />
+<link rel="stylesheet" href="../css/airspace.css" />
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/ionicons.min.css" />
+<link rel="stylesheet" href="../css/animate.css" />
+<link rel="stylesheet" href="../css/responsive.css" />
+<link rel="stylesheet" href="../css/syntax.css" />
+
+<!-- Js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/min/waypoints.min.js"></script>
+<script src="../js/jquery.counterup.js"></script>
+
+
+<script src="../js/main.js"></script>
+
+  </head>
+  <body>
+
+
+    <!-- Header Start -->
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- header Nav Start -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <img src="../img/sunpy_icon.svg" alt="Logo" height="48" width="50">
+            </a>
+          </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../index.html">Home</a></li>
+                <li class="active"><a href="../blog.html">Blog</a></li>
+                <li><a href="http://sundoc1.readthedocs.io/en/latest/">Docs</a></li>
+                <li><a href="../contribute.html">Contribute</a></li>
+                <li><a href="../help.html">Help</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</header><!-- header close -->
+
+
+
+    <div class="post">
+  <!-- Wrapper Start -->
+  <section id="intro" style="border: 1px dotted #ddd;">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="block">
+            <h1>SunPy 0.7</h1>
+            <div class="post-info-wrapper">
+              <p class="italic">By Stuart Mumford<span class="bold"></span> on <span class="bold">26 May 2016</span></p>
+            </div>
+            <hr />
+            <p>SunPy 0.7 has arrived! This release is a culmination of about 10 months of work from 27 different people. This release brings many <a href="https://github.com/sunpy/sunpy/blob/0.7/CHANGELOG.md">changes</a>, the highlights are:</p>
+
+<ol>
+  <li>Python 3.4 and 3.5 support. This is the first version of SunPy to support
+Python 3, we recommend that users start to consider moving to Python 3, please
+report any issues you may have.</li>
+  <li>New coordinate framework. The new <code class="highlighter-rouge">sunpy.coordinates</code> module provides a
+high-level interface to converting between different physical coordinate
+systems such as Helioprojective and Heliographic.</li>
+  <li>New <code class="highlighter-rouge">draw_rectangle</code> and <code class="highlighter-rouge">draw_contours</code> helpers for <code class="highlighter-rouge">Map</code>.</li>
+  <li>Support for masks in SunPy <code class="highlighter-rouge">Map</code> and <code class="highlighter-rouge">MapCube</code>.</li>
+</ol>
+
+<p>For this version of SunPy we have started building our <a href="http://conda.pydata.org/docs/">conda</a> packages on the excellent <a href="http://conda-forge.github.io">conda forge</a> service. This means you need to add the conda-forge channel to your conda installation. If you have never installed SunPy before we recommend you follow our <a href="http://docs.sunpy.org/en/stable/installation">installation instruction</a>. If you are upgrading from a previous release run the following two commands if you installed via <code class="highlighter-rouge">conda</code>:
+    conda config –add channels conda-forge
+    conda upgrade sunpy</p>
+
+<p>If you installed via <code class="highlighter-rouge">pip</code> then you can upgrade with:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pip install -U sunpy
+</code></pre>
+</div>
+
+<p>The following excellent people contributed to SunPy 0.7 (a * indicates their first contribution):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Stuart Mumford
+Pritish Chakraborty
+Steven Christe
+Jack Ireland
+Brigitta Sipocz
+David Perez-Suarez
+Punyaslok Pattnaik *
+Michael S Kirk *
+Andrew Leonard
+Alex Hamilton
+Andrew Inglis
+Daniel Ryan
+Sally Dacie *
+Sanskar Modi *
+Albert Y. Shih
+Erik M. Bray
+Larry Manley
+Priyank Lodha *
+Nabil Freij
+Ankit *
+Igor Babuschkin *
+Ole Streicher *
+Simon Liedtke
+Sudarshan Konge *
+Tessa D. Wilkinson *
+Thomas Robitaille
+yasintoda *
+</code></pre>
+</div>
+
+<p>Happy Pythoning!</p>
+</div>
+
+
+        </div><!-- .col-md-7 close -->
+      </div>
+    </div>
+  </section>
+</div>
+<p class="center-text" style="padding: 30px;">
+  <a href="../blog.html">Back to blog</a>
+</p>
+
+    </body>
+</html>

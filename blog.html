@@ -42,6 +42,15 @@
  *
  */
 -->
+<style>
+  .post-area a{
+    font-size: 16px !important;
+    color: #428bca !important;
+  }
+  .post-area p{
+    font-size: 16px;
+  }
+</style>
 
 
   </head>
@@ -93,8 +102,8 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Get the latest on what we're doing</h1>
-          <p>Catch up with us, anytime and anywhere</p>
+          <h1 class="text-center" style="font-size: 78px;color: gold">Blogs&nbsp&nbsp</h1>
+          <p class="animated fadeInUp text-center" style="font-size: 24px">Catch up with us, anytime and anywhere&nbsp&nbsp&nbsp&nbsp&nbsp</p>
         </div>
       </div>
     </div>
@@ -102,68 +111,99 @@
 </section>
 
 <div class="post-area">
-  <a href="/airspace-jekyll/2016/05/21/welcome-to-jekyll.html" class="bold">Welcome to jekyll!</a>
-  <p class="post-date">21 May 2016</p>
-  <p>
-    You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="/airspace-jekyll/2016/05/20/this-post-demonstrates-post-content-styles.html" class="bold">This post demonstrates post content styles</a>
-  <p class="post-date">20 May 2016</p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Some great heading (h2) Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et,...
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="/airspace-jekyll/2016/05/20/super-long-article.html" class="bold">Some articles are just so long they deserve a really long title to see if things will break well</a>
-  <p class="post-date">20 May 2016</p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris...
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="/airspace-jekyll/2016/05/20/my-example-post.html" class="bold">My Example Post</a>
-  <p class="post-date">20 May 2016</p>
-  <p>
-    Eos eu docendi tractatos sapientem, brute option menandri in vix, quando vivendo accommodare te ius. Nec melius fastidii constituam id, viderer theophrastus ad sit, hinc semper periculis cum id. Noluisse postulant assentior est in, no choro sadipscing repudiandae vix. Vis in euismod delenit dignissim. Ex quod nostrum sit, suas decore...
-  </p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- footer Start -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer-manu">
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="/airspace-jekyll/contact">Contact us</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="/airspace-jekyll/blog">Blog</a></li>
-            <li><a href="#">Terms</a></li>
-          </ul>
-        </div>
-        <p>Copyright &copy; Design &amp; Developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
-      </div>
-    </div>
+  <div style="display: flex;justify-content: center;">
+  <a href="posts/website.html" style="font-size: 30px !important;color: #492aa4 !important;">Updates to the website</a>
   </div>
-</footer>
+  <div style="display: flex;justify-content: center;">
+  <p class="post-date">Nabil Freij - <small>7 April 2017</small></p>
+  </div><br>
+  <p>
+    The website has gone some minor updates to incorpate (hopefully) the lastest version of Bootstrap and its build dependacies among other items.
+This work came from <a href="https://github.com/prateekiiest">Prateek Chanda</a>, <a href="https://github.com/DuyguKeskek">Duygu KEŞKEK</a> and <a href="souravc4">Sourav Kumar.</a>
+  </p>
+</div>
 
+<div class="post-area">
+  <div style="display: flex;justify-content: center;"><a href="posts/sunpy.html" style="font-size: 30px !important;color: #492aa4 !important;">SunPy 0.7</a>
+  </div>
+  <div style="display: flex;justify-content: center;">
+  <p class="post-date">Stuart Mumford - <small>26 May 2016</small></p>
+  </div><br>
+  <p>SunPy 0.7 has arrived! This release is a culmination of about 10 months of work from 27 different people. This release brings many <a href="https://github.com/sunpy/sunpy/blob/0.7/CHANGELOG.md">changes</a>, the highlights are:</p>
+
+<ol>
+  <li>Python 3.4 and 3.5 support. This is the first version of SunPy to support
+Python 3, we recommend that users start to consider moving to Python 3, please
+report any issues you may have.</li>
+  <li>New coordinate framework. The new <code class="highlighter-rouge">sunpy.coordinates</code> module provides a
+high-level interface to converting between different physical coordinate
+systems such as Helioprojective and Heliographic.</li>
+  <li>New <code class="highlighter-rouge">draw_rectangle</code> and <code class="highlighter-rouge">draw_contours</code> helpers for <code class="highlighter-rouge">Map</code>.</li>
+  <li>Support for masks in SunPy <code class="highlighter-rouge">Map</code> and <code class="highlighter-rouge">MapCube</code>.</li>
+</ol>
+
+<p>For this version of SunPy we have started building our <a href="http://conda.pydata.org/docs/">conda</a> packages on the excellent <a href="http://conda-forge.github.io">conda forge</a> service. This means you need to add the conda-forge channel to your conda installation. If you have never installed SunPy before we recommend you follow our <a href="http://docs.sunpy.org/en/stable/installation">installation instruction</a>. If you are upgrading from a previous release run the following two commands if you installed via <code class="highlighter-rouge">conda</code>:
+    conda config –add channels conda-forge
+    conda upgrade sunpy</p>
+
+<p>If you installed via <code class="highlighter-rouge">pip</code> then you can upgrade with:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pip install -U sunpy
+</code></pre>
+</div>
+
+<p>The following excellent people contributed to SunPy 0.7 (a * indicates their first contribution):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Stuart Mumford
+Pritish Chakraborty
+Steven Christe
+Jack Ireland
+Brigitta Sipocz
+David Perez-Suarez
+Punyaslok Pattnaik *
+Michael S Kirk *
+Andrew Leonard
+Alex Hamilton
+Andrew Inglis
+Daniel Ryan
+Sally Dacie *
+Sanskar Modi *
+Albert Y. Shih
+Erik M. Bray
+Larry Manley
+Priyank Lodha *
+Nabil Freij
+Ankit *
+Igor Babuschkin *
+Ole Streicher *
+Simon Liedtke
+Sudarshan Konge *
+Tessa D. Wilkinson *
+Thomas Robitaille
+yasintoda *
+</code></pre>
+</div>
+
+<p>Happy Pythoning!</p>
+</div>
+
+<div class="post-area">
+  <div style="display: flex;justify-content: center;">
+  <a href="posts/python.html" style="font-size: 30px !important;color: #492aa4 !important;">First impressions from SunPy at Python in Astronomy 2016</a>
+  </div>
+  <div style="display: flex;justify-content: center;">
+  <p class="post-date">Steven Christe - <small>21 March 2016</small></p>
+  </div><br>
+  <p>Steven Christe (<a href="https://github.com/ehsteve">@ehsteve</a>) and Stuart Mumford (<a href="https://github.com/ehsteve">@Cadair</a>) got to attend the (great) 
+<a href="http://python-in-astronomy.github.io/2016/">Python in Astronomy</a> conference
+which took place in Seattle Washington from 21-25th of March 2016.</p>
+
+<p>An introduction to SunPy was presented by Steven and you can find the presentation 
+(and citation) at <a href="https://zenodo.org/record/48637">Zenodo</a>.</p>
+
+<p>Great discussions took place on future plans for <a href="http://docs.astropy.org/en/stable/nddata/index.html">NDData</a>, 
+a new Time Series object (https://github.com/astropy/astropy-APEs/pull/12) in Astropy, among many others.</p>
+</div>
 
     </body>
 </html>
